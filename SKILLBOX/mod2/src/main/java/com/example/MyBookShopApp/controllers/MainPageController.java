@@ -29,7 +29,6 @@ public class MainPageController {
         model.addAttribute("bookData", bookService.getBooksData());
 
 
-
         return "index";
     }
     @GetMapping("/authors")
