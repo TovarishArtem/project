@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog">
+    <changeSet author="codewizard (generated)" id="1603081757795-1">
+        <createSequence sequenceName="books_id_seq"/>
+    </changeSet>
+    <changeSet author="codewizard (generated)" id="1603081757795-2">
+        <createSequence sequenceName="books_id_seq1"/>
+    </changeSet>
+    <changeSet author="codewizard (generated)" id="1603081757795-3">
+        <createSequence sequenceName="books_id_seq2"/>
+    </changeSet>
+    <changeSet author="codewizard (generated)" id="1603081757795-4">
+        <createTable tableName="books">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="books_pkey"/>
+            </column>
+            <column name="title" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
